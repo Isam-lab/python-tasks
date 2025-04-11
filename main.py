@@ -28,7 +28,7 @@ def show_menu():
 while True:
     show_menu()
     choice = input("Bitte wähle eine Option: ")
-
+    
     if choice == "0":
         print("Programm beendet.")
         break
