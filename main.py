@@ -22,15 +22,15 @@ def show_menu():
     print("8. Wortzähler")
     print("9. Passwort-Checker")
     print("10. FizzBuzz")
-    print("0. Beenden")
+    print("exit. Beenden")
     print("-------------------------")
 
 while True:
     show_menu()
     choice = input("Bitte wähle eine Option: ")
     
-    if choice == "0":
-        print("Programm beendet.")
+    if choice == "exit":
+        print("Programm ist beendet.")
         break
     elif choice == "1":
         Hello_world.run()
