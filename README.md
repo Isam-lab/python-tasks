@@ -58,7 +58,7 @@ Dieses Projekt ist eine Sammlung von 10 kleinen Python-Übungen, die über ein i
 
 1. Projekt klonen:
    ```bash
-   git clone https://github.com/dein-benutzername/python-tasks.git
+   git clone https://github.com/Isam-lab/python-tasks.git
    cd python-tasks
 
 ## Projektstruktur
