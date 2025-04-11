@@ -1,2 +1,20 @@
 def run():
-    print("Hallo, Welt! Ich bin Isam!")
+    print("\n--- Option 5: Temperaturumrechner ---")
+    print("1. Celsius → Fahrenheit")
+    print("2. Fahrenheit → Celsius")
+
+    choice = input("Bitte wähle (1 oder 2): ")
+
+    try:
+        if choice == "1":
+            celsius = float(input("Temperatur in °C: "))
+            fahrenheit = (celsius * 9/5) + 32
+            print(f"{celsius}°C sind {fahrenheit:.2f}°F")
+        elif choice == "2":
+            fahrenheit = float(input("Temperatur in °F: "))
+            celsius = (fahrenheit - 32) * 5/9
+            print(f"{fahrenheit}°F sind {celsius:.2f}°C")
+        else:
+            print("Ungültige Auswahl. Bitte 1 oder 2 eingeben.")
+    except ValueError:
+        print("Ungültige Eingabe! Bitte eine Zahl eingeben.")
