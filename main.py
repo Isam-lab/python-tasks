@@ -1,4 +1,3 @@
-
 import Hello_world
 import name_age
 import calculator
@@ -22,16 +21,21 @@ def show_menu():
     print("8. Wortzähler")
     print("9. Passwort-Checker")
     print("10. FizzBuzz")
-    print("für das Beenden des Programms 'exit' eingeben")
+    print("Gib 'exit' ein, um das Programm zu beenden.")
+    print("Gib 'm' ein, um das Menü erneut anzuzeigen.")
     print("-------------------------")
 
+# Menü einmal zu Beginn zeigen
+show_menu()
+
 while True:
-    show_menu()
-    choice = input("Bitte wähle eine Option: ")
-    
+    choice = input("\nBitte wähle eine Option (1-10, 'm' für Menü, 'exit' zum Beenden): ").strip().lower()
+
     if choice == "exit":
         print("Programm ist beendet.")
         break
+    elif choice == "m":
+        show_menu()
     elif choice == "1":
         Hello_world.run()
     elif choice == "2":
@@ -53,4 +57,10 @@ while True:
     elif choice == "10":
         fizzbuzz.run()
     else:
-        print("Ungültige Eingabe. Bitte wähle eine Zahl von 0 bis 10.")
+        print("❌ Ungültige Eingabe. Bitte gib eine Zahl von 1 bis 10 ein, 'm' für das Menü oder 'exit' zum Beenden.")
+
+    
+    
+    
+    
+    
