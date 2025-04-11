@@ -2,11 +2,11 @@
 besteht aus mehrere interaktive Python-Programme. 
 
 Python-Programm mit folgendem Menü    Dateiname
-1. Python Übungsmenü                  haupt_menu.py
-2. Hallo, Welt!                       HelloW.py
+1. Python Übungsmenü                  main.py
+2. Hallo, Welt!                       Hello_world.py
 3. Eingabe von Name und Alter         name_age.py
 4. Einfacher Taschenrechner           calculator.py
-5. Gerade oder ungerade Zahl          even_odd.p   
+5. Gerade oder ungerade Zahl          even_odd.py   
 6. Temperaturumrechner                temperature.py
 7. Zahlenratespiel                    guess_number.py
 8. Liste und Schleifen                list_stats.py
