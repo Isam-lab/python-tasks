@@ -22,7 +22,7 @@ def show_menu():
     print("8. Wortzähler")
     print("9. Passwort-Checker")
     print("10. FizzBuzz")
-    print("exit. Beenden")
+    print("für das Beenden des Programms 'exit' eingeben")
     print("-------------------------")
 
 while True:
