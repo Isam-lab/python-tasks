@@ -8,6 +8,7 @@ import list_stats
 import word_counter
 import password_checker
 import fizzbuzz
+import ziffersumme_bis_einstellig
 
 def show_menu():
     print("\n--- Python Übungsmenü ---")
@@ -21,6 +22,7 @@ def show_menu():
     print("8. Wortzähler")
     print("9. Passwort-Checker")
     print("10. FizzBuzz")
+    print("11. Ziffersumme bis einstellig")
     print("Gib 'exit' ein, um das Programm zu beenden.")
     print("Gib 'm' ein, um das Menü erneut anzuzeigen.")
     print("-------------------------")
@@ -34,6 +36,8 @@ while True:
     if choice == "exit":
         print("Programm ist beendet.")
         break
+    elif choice == "11":
+        ziffersumme_bis_einstellig.run()
     elif choice == "m":
         show_menu()
     elif choice == "1":
