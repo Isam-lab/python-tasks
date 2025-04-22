@@ -1,6 +1,6 @@
 def run():
-    print("Willkommen zur Ziffernsumme bis einstellig!")
-    
+    print("\n--- Option 11: Ziffernsumme bis einstellig ---")
+    print("Hier kannst du die Ziffernsumme einer Zahl bis zur einstelligkeit berechnen.")
     try:
         zahl = int(input("Gib eine ganze Zahl ein: "))
         
@@ -20,6 +20,6 @@ def run():
 
 
 
-run()
+
 
 
