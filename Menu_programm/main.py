@@ -14,6 +14,7 @@ def show_menu():
     print("12. Zahlen-Dreieck")
     print("13. primzahlen bis zu einer bestimmten Zahl")
     print("14. Zeichenkette umkehren")
+    print("15. Duplikate aus einer Liste entfernen")
     print("Gib 'exit' ein, um das Programm zu beenden.")
     print("Gib 'm' ein, um das Menü erneut anzuzeigen.")
     print("-------------------------")
@@ -69,6 +70,10 @@ while True:
         case "14":
             import zeichenkette_umkehr
             zeichenkette_umkehr.run()
+        case "15":  
+            import erase_duplicates
+            erase_duplicates.run()    
+            
         case "exit":
             print("Programm ist beendet.")
             break
