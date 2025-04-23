@@ -24,55 +24,57 @@ show_menu()
 while True:
     choice = input("\nBitte wähle eine Option (1-14, 'm' für Menü, 'exit' zum Beenden): ").strip().lower()
 
-    if choice == "m":
-        show_menu()
-    elif choice == "1":
-        import Hello_world
-        Hello_world.run()
-    elif choice == "2":
-        import name_age
-        name_age.run()
-    elif choice == "3":
-        import calculator
-        calculator.run()
-    elif choice == "4":
-        import even_odd
-        even_odd.run()
-    elif choice == "5":
-        import temperature
-        temperature.run()
-    elif choice == "6":
-        import guess_number
-        guess_number.run()
-    elif choice == "7":
-        import list_stats
-        list_stats.run()
-    elif choice == "8":
-        import word_counter
-        word_counter.run()
-    elif choice == "9":
-        import password_checker
-        password_checker.run()
-    elif choice == "10":
-        import fizzbuzz
-        fizzbuzz.run()
-    elif choice == "11":
-        import ziffersumme_bis_einstellig
-        ziffersumme_bis_einstellig.run()
-    elif choice == "12":
-        import Zahlen_Dreieck
-        Zahlen_Dreieck.run()
-    elif choice == "13":
-        import Primzahlen
-        Primzahlen.run()
-    elif choice == "14":
-        import zeichenkette_umkehr
-        zeichenkette_umkehr.run()
-    elif choice == "exit":
-        print("Programm ist beendet.")
-        break
-    else:
-        print("❌ Ungültige Eingabe. Bitte gib eine Zahl von 1 bis 10 ein, 'm' für das Menü oder 'exit' zum Beenden.")
+    match choice:
+        case "m":
+            show_menu()
+        case "1":
+            import Hello_world
+            Hello_world.run()
+        case "2":
+            import name_age
+            name_age.run()
+        case "3":
+            import calculator
+            calculator.run()
+        case "4":
+            import even_odd
+            even_odd.run()
+        case "5":
+            import temperature
+            temperature.run()
+        case "6":
+            import guess_number
+            guess_number.run()
+        case "7":
+            import list_stats
+            list_stats.run()
+        case "8":
+            import word_counter
+            word_counter.run()
+        case "9":
+            import password_checker
+            password_checker.run()
+        case "10":
+            import fizzbuzz
+            fizzbuzz.run()
+        case "11":
+            import ziffersumme_bis_einstellig
+            ziffersumme_bis_einstellig.run()
+        case "12":
+            import Zahlen_Dreieck
+            Zahlen_Dreieck.run()
+        case "13":
+            import Primzahlen
+            Primzahlen.run()
+        case "14":
+            import zeichenkette_umkehr
+            zeichenkette_umkehr.run()
+        case "exit":
+            print("Programm ist beendet.")
+            break
+        case _:
+            print("❌ Ungültige Eingabe. Bitte gib eine Zahl von 1 bis 14 ein, 'm' für das Menü oder 'exit' zum Beenden.")
+
 
 
 
